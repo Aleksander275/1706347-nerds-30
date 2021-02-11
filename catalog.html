@@ -13,28 +13,32 @@
 
     <header class="main-header">
 
-      <nav class="nav-header">
+      <div class="main-nav-wrapper">
+
+        <nav class="nav-header">
         <a class="logo-header" href="index.html">
           <img class="image" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии «Нёрдс»">
         </a>
         <div>
           <ul class="nav-site">
-            <li><a class="nav-site-item" href="index.html">студия</a></li>
+            <li><a class="nav-site-item active" href="index.html">студия</a></li>
             <li><a class="nav-site-item" href="blank.html">клиенты</a></li>
-            <li><a class="nav-site-item active" href="catalog.html">магазин</a></li>
+            <li><a class="nav-site-item" href="catalog.html">магазин</a></li>
             <li><a class="nav-site-item" href="blank.html">контакты</a></li>
           </ul>
         </div>
-        <div>
+        <div class="basket-link-conteiner">
           <a class="basket-link" href="№">корзина</a>
         </div>
-      </nav>
+        </nav>
+
+      </div>
 
     </header>
 
     <main class="catalog-container">
 
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="header-catalog-container">Магазин готовых шаблонов</h1>
 
       <div class="catalog-conteiner-content">
 
@@ -46,10 +50,10 @@
   
             <fieldset class="filter-cost">
               <legend>Стоимость:</legend>
-              <input class="filter-range" type="range" name="cost" value="7500" id="filter-range">
+              <div class="conteiner-filter-range"><input class="filter-range" type="range" name="cost" value="7500" id="filter-range"></div>
               <div class="value-range">
-                <label for="filter-range">От <input type="text" name="min-interval" value="0"></label>
-                <label for="filter-range">До <input type="text" name="max-interval" value="15000"></label>
+                <label for="filter-range">От <input class="input-filter-range" type="text" name="min-interval" value="0"></label>
+                <label for="filter-range">До <input class="input-filter-range" type="text" name="max-interval" value="15000"></label>
               </div>  
             </fieldset>
   
@@ -105,12 +109,10 @@
   
         </section>
   
-          
-  
         <section class="catalog">
   
           <div class="catalog-filter">
-            <h3>Сортировать:</h3>
+            <h3 class="catalog-filter-header">Сортировать:</h3>
             <ul class="filter-catalog-list">
               <li class="filter-catalog-item">по цене</li>
               <li class="filter-catalog-item none-active-item">по типу</li>
@@ -137,7 +139,7 @@
                 <div class="desc-catalog-item">
                   <h4 class="desc-header"><a class="link-catalog-item" href="#">sedona</a></h4>
                   <p class="desc-text">Информационный сайт <br> для туристов</p>
-                  <p>
+                  <p class="container-button-desc">
                   <button class="button button-desc" type="button">9900</button>
                   </p>
                 </div>
@@ -156,7 +158,7 @@
                 <div class="desc-catalog-item">
                   <h4 class="desc-header"><a class="link-catalog-item" href="#">pink app</a></h4>
                   <p class="desc-text">Продуктовый лендинг <br> приложения для IOS и Android</p>
-                  <p>
+                  <p class="container-button-desc">
                     <button class="button button-desc" type="button">9900</button>
                   </p>
                 </div>
@@ -175,7 +177,7 @@
                 <div class="desc-catalog-item">
                   <h4 class="desc-header"><a class="link-catalog-item" href="#">barbershop</a></h4>
                   <p class="desc-text">Сайт салона красоты. <br> Для мужчин, да.</p>
-                  <p>
+                  <p class="container-button-desc">
                     <button class="button button-desc" type="button">9900</button>
                   </p>
                 </div>
@@ -195,7 +197,7 @@
                 <div class="desc-catalog-item">
                   <h4 class="desc-header"><a class="link-catalog-item" href="#">mishka</a></h4>
                   <p class="desc-text">Интернет-магазин <br> вязаных игрушек </p>
-                  <p>
+                  <p class="container-button-desc">
                     <button class="button button-desc" type="button">9900</button>
                   </p>
                 </div>
@@ -215,7 +217,7 @@
                 <div class="desc-catalog-item">
                   <h4 class="desc-header"><a class="link-catalog-item" href="#">a plus</a></h4>
                   <p class="desc-text">Лендинг курсов повышения <br> квалификации</p>
-                  <p>
+                  <p class="container-button-desc">
                     <button class="button button-desc" type="button">9900</button>
                   </p>
                 </div>
@@ -234,7 +236,7 @@
                 <div class="desc-catalog-item">
                   <h4 class="desc-header"><a class="link-catalog-item" href="#">kbact</a></h4>
                   <p class="desc-text">Промо-сайт производителя <br> крафтового кваса</p>
-                  <p>
+                  <p class="container-button-desc">
                     <button class="button button-desc" type="button">9900</button>
                   </p>
                 </div>
@@ -249,19 +251,19 @@
             <ul>
   
               <li class="pagination-item-current">
-                <a href="#">1</a>
+                <a class="pagination-link" href="#">1</a>
               </li>
   
               <li class="pagination-item">
-                <a href="#">2</a>
+                <a class="pagination-link" href="#">2</a>
               </li>
   
               <li class="pagination-item">
-                <a href="#">3</a>
+                <a class="pagination-link" href="#">3</a>
               </li>
   
               <li class="pagination-item pagination-item-next">
-                <a href="#">следующая</a>
+                <a class="pagination-link-next" href="#">следующая</a>
               </li>
   
             </ul>
@@ -269,7 +271,7 @@
   
         </section>
   
-          <section class="contacts">
+        <section class="contacts">
           <h2>Контактная информация</h2>
             <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
           <p class="contacts-info">
@@ -278,7 +280,8 @@
             тел. <a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a>
           </p>
           <a class="button button-contacts" href="blank.html">напишите нам</a>
-          </section>
+        </section>
+
       </div>
 
     </main>

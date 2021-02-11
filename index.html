@@ -18,7 +18,9 @@
 
     <header class="main-header">
 
-      <nav class="nav-header">
+      <div class="main-nav-wrapper">
+
+        <nav class="nav-header">
         <a class="logo-header" href="#">
           <img class="image" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии «Нёрдс»">
         </a>
@@ -30,44 +32,62 @@
             <li><a class="nav-site-item" href="blank.html">контакты</a></li>
           </ul>
         </div>
-        <div>
+        <div class="basket-link-conteiner">
           <a class="basket-link" href="№">корзина</a>
         </div>
-      </nav>
+        </nav>
+
+      </div>
 
     </header>
 
     <main class="container">
-
+    
       <h1>Сайт дизайн-студии «Нёрдс»</h1>
+      
+      <div class="advantages-wrapper">
 
-      <section class="advantages">
+        <section class="advantages">
         <h2>Преимущества</h2>
         <div class="slide1">
-          <h3 class="slide-header">Долго, дорого, скурпулезно.</h3>
-          <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <div class="button-slide"><a class="button" href="#">узнать больше</a></div>
-          <img class="image image-slide" src="img/slide1.png" width="760" height="431" alt="">
+          <div class="conteiner-slide">
+            <h3 class="slide-header">Долго, дорого, скурпулезно.</h3>
+            <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <div class="button-slide"><a class="button" href="#">узнать больше</a></div>
+          </div>
+          <div class="conteiner-image-slide">
+            <img class="image image-slide" src="img/slide1.png" width="760" height="431" alt="">
+          </div>
         </div>
         <div class="slide2">
-          <h3 class="slide-header">Любим математику как никто другой.</h3>
-          <p class="slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-          <div class="button-slide"><a class="button" href="#">узнать больше</a></div>
-          <img class="image image-slide" src="img/slide2.png" width="760" height="431" alt="">
+          <div class="conteiner-slide">
+            <h3 class="slide-header">Любим математику как никто другой.</h3>
+            <p class="slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+            <div class="button-slide"><a class="button" href="#">узнать больше</a></div>
+          </div>
+          <div class="conteiner-image-slide">
+            <img class="image image-slide" src="img/slide2.png" width="760" height="431" alt="">
+          </div>
         </div>
         <div class="slide3">
-          <h3 class="slide-header">Только ночь,<br> только хардкор</h3>
-          <p class="slide-text">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается. </p>
-          <div class="button-slide"><a class="button" href="#">узнать больше</a></div>
-          <img class="image image-slide" src="img/slide3.png" width="760" height="431" alt="">
+          <div class="conteiner-slide">
+            <h3 class="slide-header">Только ночь,<br> только хардкор</h3>
+            <p class="slide-text">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается. </p>
+            <div class="button-slide"><a class="button" href="#">узнать больше</a></div>
+          </div>
+          <div class="conteiner-image-slide">
+            <img class="image image-slide" src="img/slide3.png" width="760" height="431" alt="">
+          </div>
         </div>
         <div class="dotted-list">
           <div class="dotted-item"></div>
           <div class="dotted-item"></div>
           <div class="dotted-item"></div>
         </div>
-      </section>
+        </section>
     
+      </div>
+
       <section class="features">
         <h2>Продукция</h2>
         <ul class="features-list">
@@ -75,19 +95,19 @@
             <img class="image features-image1" src="img/web.png" width="300" height="146" alt="Веб страница">
             <h3 class="features-header">веб-сайты</h3>
             <p class="text-image1">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button button-site" href="#">заказать</a>
+            <div><a class="button button-site" href="#">заказать</a></div>
           </li>
           <li class="features-item">
             <img class="image features-image2" src="img/soft.png" width="300" height="146" alt="Мобильное приложение">
             <h3 class="features-header">приложения</h3>
             <p class="text-image2">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button button-apps" href="#">заказать</a>
+            <div><a class="button button-apps" href="#">заказать</a></div>
           </li>
           <li class="features-item">
             <img class="image features-image3" src="img/present.png" width="300" height="146" alt="Презентация">
             <h3 class="features-header">презентации</h3>
             <p class="text-image3">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button button-presentations" href="#">заказать</a>
+            <div><a class="button button-presentations" href="#">заказать</a></div>
           </li>
         </ul>
       </section>
@@ -98,7 +118,7 @@
 
         <div class="block1-content">
           <p class="block1text-content">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="block1text2-content">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3 class="block1-header">выполняем заказы на разработку:</h3>
           <ul class="block1-list"> 
             <li class="block1-item">
@@ -114,24 +134,32 @@
         </div>
 
         <div class="block2-content">
+
           <div class="block2-img"> 
             <img class="image" src="img/nerds-logo.png" width="360" height="208" alt="Логотип дизайн студии «Нёрдс»">
           </div>
-          <h3 class="block2-header">с 2004 года любим точность во всем:</h3>
-          <ul class="block2-list">
-            <li class="block2-item">
-              <h4 class="header-item-block2">146%</h4>
-              <p>Уровень самоотдачи</p>
-            </li>
-            <li class="block2-item">
-              <h4 class="header-item-block2">100%</h4>
-              <p>Соблюдение сроков</p>
-            </li>
-            <li class="block2-item">
-              <h4 class="header-item-block2">50%</h4>
-              <p>Минимальная предоплата</p>
-            </li>
-          </ul>
+
+          <div class="block2-header-conteiner">
+            <h3 class="block2-header">с 2004 года любим точность во всем:</h3>
+          </div>
+
+          <div class="block2-list-conteiner">
+            <ul class="block2-list">
+              <li class="block2-item">
+                <h4 class="header-item-block2">146<sup>%</sup></h4>
+                <p class="text-item-block2">Уровень самоотдачи</p>
+              </li>
+              <li class="block2-item">
+                <h4 class="header-item-block2">100<sup>%</sup></h4>
+                <p class="text-item-block2">Соблюдение сроков</p>
+              </li>
+              <li class="block2-item">
+                <h4 class="header-item-block2">50<sup>%</sup></h4>
+                <p class="text-item-block2">Минимальная предоплата</p>
+              </li>
+            </ul>
+          </div>
+          
         </div>
         
       </section>
