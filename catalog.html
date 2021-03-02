@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог дизайн-студии Нёрдс</title>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
@@ -73,15 +73,15 @@
               <legend>сетка:</legend>
               <ul class="filter-radio-list">
                 <li class="filter-radio-item">
-                  <input class="filter-radio-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                  <input class="filter-radio-input visually-hidden" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-radio-item">
-                  <input class="filter-radio-input" type="radio" name="grid" value="Fixed" id="filter-Fixed">
+                  <input class="filter-radio-input visually-hidden" type="radio" name="grid" value="Fixed" id="filter-Fixed">
                   <label for="filter-Fixed">Фиксированная</label>
                 </li>
                 <li class="filter-radio-item">
-                  <input class="filter-radio-input" type="radio" name="grid" value="rubbery" id="filter-rubbery">
+                  <input class="filter-radio-input visually-hidden" type="radio" name="grid" value="rubbery" id="filter-rubbery">
                   <label for="filter-rubbery">Резиновая</label>
                 </li>
               </ul>
@@ -91,24 +91,24 @@
               <legend>особенности:</legend>
               <ul class="filter-checkbox-list">
                 <li class="filter-checkbox-item">
-                  <input class="filter-checkbox-input" type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-checkbox-item">
-                  <input class="filter-checkbox-input" type="checkbox" name="advantages" id="filter-advantages">
-              <label for="filter-advantages">Блок преимуществ</label>
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="advantages" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-checkbox-item">
-                  <input class="filter-checkbox-input" type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
                 </li>
                 <li class="filter-checkbox-item">
-                  <input class="filter-checkbox-input" type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-checkbox-item">
-                  <input class="filter-checkbox-input" type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -150,15 +150,17 @@
                     <img class="image image-sedona" src="img/img-sedona 1.jpg" width="358" height="578" alt="сайт седона">
                   </p>
                 </div>
-  
-                <div class="desc-catalog-item">
-                  <h4 class="desc-header"><a class="link-catalog-item" href="#">sedona</a></h4>
-                  <p class="desc-text">Информационный сайт <br> для туристов</p>
-                  <p class="container-button-desc">
-                  <button class="button button-desc" type="button">9900</button>
-                  </p>
+                
+                <div class="container-desc-catalog-item">
+                  <div class="desc-catalog-item">
+                    <h4 class="desc-header"><a class="link-catalog-item" href="#">sedona</a></h4>
+                    <p class="desc-text">Информационный сайт <br> для туристов</p>
+                    <p class="container-button-desc">
+                      <button class="button button-desc" type="button">9900</button>
+                    </p>
+                  </div>
                 </div>
-  
+
               </li>
   
               <li class="catalog-item">
@@ -173,14 +175,15 @@
                   </p>
                 </div>
   
-                <div class="desc-catalog-item">
-                  <h4 class="desc-header"><a class="link-catalog-item" href="#">pink app</a></h4>
-                  <p class="desc-text">Продуктовый лендинг <br> приложения для IOS и Android</p>
-                  <p class="container-button-desc">
-                    <button class="button button-desc" type="button">9900</button>
-                  </p>
+                <div class="container-desc-catalog-item">
+                  <div class="desc-catalog-item">
+                    <h4 class="desc-header"><a class="link-catalog-item" href="#">pink app</a></h4>
+                    <p class="desc-text">Продуктовый лендинг <br> приложения для IOS и Android</p>
+                    <p class="container-button-desc">
+                      <button class="button button-desc" type="button">9900</button>
+                    </p>
+                  </div>
                 </div>
-                
               </li>
   
               <li class="catalog-item">
@@ -195,12 +198,14 @@
                   </p>
                 </div>
   
-                <div class="desc-catalog-item">
-                  <h4 class="desc-header"><a class="link-catalog-item" href="#">barbershop</a></h4>
-                  <p class="desc-text">Сайт салона красоты. <br> Для мужчин, да.</p>
-                  <p class="container-button-desc">
-                    <button class="button button-desc" type="button">9900</button>
-                  </p>
+                <div class="container-desc-catalog-item">
+                  <div class="desc-catalog-item">
+                    <h4 class="desc-header"><a class="link-catalog-item" href="#">barbershop</a></h4>
+                    <p class="desc-text">Сайт салона красоты. <br> Для мужчин, да.</p>
+                    <p class="container-button-desc">
+                      <button class="button button-desc" type="button">9900</button>
+                    </p>
+                  </div>
                 </div>
                 
   
@@ -218,12 +223,14 @@
                   </p>
                 </div>
   
-                <div class="desc-catalog-item">
-                  <h4 class="desc-header"><a class="link-catalog-item" href="#">mishka</a></h4>
-                  <p class="desc-text">Интернет-магазин <br> вязаных игрушек </p>
-                  <p class="container-button-desc">
-                    <button class="button button-desc" type="button">9900</button>
-                  </p>
+                <div class="container-desc-catalog-item">
+                  <div class="desc-catalog-item">
+                    <h4 class="desc-header"><a class="link-catalog-item" href="#">mishka</a></h4>
+                    <p class="desc-text">Интернет-магазин <br> вязаных игрушек </p>
+                    <p class="container-button-desc">
+                      <button class="button button-desc" type="button">9900</button>
+                    </p>
+                  </div>
                 </div>
                 
   
@@ -241,12 +248,14 @@
                   </p>
                 </div>
   
-                <div class="desc-catalog-item">
-                  <h4 class="desc-header"><a class="link-catalog-item" href="#">a plus</a></h4>
-                  <p class="desc-text">Лендинг курсов повышения <br> квалификации</p>
-                  <p class="container-button-desc">
-                    <button class="button button-desc" type="button">9900</button>
-                  </p>
+                <div class="container-desc-catalog-item">
+                  <div class="desc-catalog-item">
+                    <h4 class="desc-header"><a class="link-catalog-item" href="#">a plus</a></h4>
+                    <p class="desc-text">Лендинг курсов повышения <br> квалификации</p>
+                    <p class="container-button-desc">
+                      <button class="button button-desc" type="button">9900</button>
+                    </p>
+                  </div>
                 </div>
                 
               </li>
@@ -263,14 +272,15 @@
                   </p>
                 </div>
   
-                <div class="desc-catalog-item">
-                  <h4 class="desc-header"><a class="link-catalog-item" href="#">kbact</a></h4>
-                  <p class="desc-text">Промо-сайт производителя <br> крафтового кваса</p>
-                  <p class="container-button-desc">
-                    <button class="button button-desc" type="button">9900</button>
-                  </p>
+                <div class="container-desc-catalog-item">
+                  <div class="desc-catalog-item">
+                    <h4 class="desc-header"><a class="link-catalog-item" href="#">kbact</a></h4>
+                    <p class="desc-text">Промо-сайт производителя <br> крафтового кваса</p>
+                    <p class="container-button-desc">
+                      <button class="button button-desc" type="button">9900</button>
+                    </p>
+                  </div>
                 </div>
-                
               </li>
   
             </ul>
@@ -370,5 +380,46 @@
 
     </footer>
       
+    <section class="modal">
+
+      <div class="modal-wrapper">
+
+        <h2 class="modal-header">Напишите нам</h2>
+
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        
+          <div class="login-wrapper">
+
+            <p class="container-name">
+              <label for="name">Ваше имя:</label>
+              <input class="name-icon" type="text" id="name" name="name" placeholder="Имя Фамилия">
+            </p>
+
+            <p class="container-login">
+              <label for="login">Ваш email:</label>
+              <input class="login-icon" required id="login" type="email" name="login" placeholder="email@example.com">
+            </p>
+
+          </div> 
+
+          <p class="container-comment">
+            <label for="comment">Текст письма:</label>
+            <textarea class="comment-icon" name="comment" id="comment" rows="4" placeholder="В свободной форме"></textarea>
+          </p>
+
+          <button class="button button-form" type="submit">отправить</button>
+
+        </form>
+
+      </div>
+
+      <button class="modal-close" aria-label="Закрыть">
+        <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3391 10.5088l7.3772-7.37715c.3893-.38932.3893-1.02585 0-1.41518L19.3011.300294c-.3893-.3893243-1.0259-.3893243-1.4152 0L10.5088 7.67844 3.13163.301295c-.38933-.3893245-1.02586-.3893245-1.41518 0L.301271 1.71647c-.3893247.38933-.3893247 1.02586 0 1.41518L7.67842 10.5088.301271 17.8859c-.3893247.3894-.3893247 1.0259 0 1.4152l1.416179 1.4152c.38933.3893 1.02586.3893 1.41518 0l7.37717-7.3771 7.3771 7.3771c.3893.3893 1.0259.3893 1.4152 0l1.4152-1.4152c.3893-.3893.3893-1.0258 0-1.4152l-7.3782-7.3771z" fill="#FB565A"/></svg>
+      </button>
+
+    </section>
+
+    <script src="./js/nerds.js"></script>
+
   </body>
 </html>
