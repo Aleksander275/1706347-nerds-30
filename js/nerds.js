@@ -4,6 +4,9 @@ const commentLink = document.querySelector(".button-contacts");
 const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".modal-close");
 const loginIcon = document.querySelector(".login-icon");
+const nameIcon = document.querySelector(".name-icon");
+const commentIcon = document.querySelector(".comment-icon");
+const loginForm = document.querySelector(".login-form");
 
 commentLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -14,6 +17,9 @@ commentLink.addEventListener("click", function (evt) {
 modalClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal.classList.remove("modal-show");
+    loginIcon.classList.remove("modal-error");
+    nameIcon.classList.remove("modal-error");
+    commentIcon.classList.remove("modal-error");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -21,10 +27,21 @@ window.addEventListener("keydown", function (evt) {
       if (modal.classList.contains("modal-show")) {
         evt.preventDefault();
         modal.classList.remove("modal-show");
+        loginIcon.classList.remove("modal-error");
+        nameIcon.classList.remove("modal-error");
+        commentIcon.classList.remove("modal-error");
       }
     }
 });
 
+loginForm.addEventListener("submit", function (evt) {
+    if (!loginIcon.value || !nameIcon.value || !commentIcon.value) {
+      evt.preventDefault();
+      loginIcon.classList.add("modal-error");
+      nameIcon.classList.add("modal-error");
+      commentIcon.classList.add("modal-error");
+    }
+});
 /*slider*/
 
 const control1 = document.querySelector(".control1");
