@@ -44,15 +44,15 @@ loginForm.addEventListener("submit", function (evt) {
 });
 /*slider*/
 
-const control1 = document.querySelector(".control1");
-const conteinerSlide1 = document.querySelector(".conteiner-slide1");
-const control2 = document.querySelector(".control2");
-const conteinerSlide2 = document.querySelector(".conteiner-slide2");
-const control3 = document.querySelector(".control3");
-const conteinerSlide3 = document.querySelector(".conteiner-slide3");
-const buttonControlItem1 = document.querySelector(".button-control-item1");
-const buttonControlItem2 = document.querySelector(".button-control-item2");
-const buttonControlItem3 = document.querySelector(".button-control-item3");
+const control1 = document.querySelector(".control-one");
+const conteinerSlide1 = document.querySelector(".conteiner-slide-one");
+const control2 = document.querySelector(".control-two");
+const conteinerSlide2 = document.querySelector(".conteiner-slide-two");
+const control3 = document.querySelector(".control-three");
+const conteinerSlide3 = document.querySelector(".conteiner-slide-three");
+const buttonControlItem1 = document.querySelector(".button-control-item-one");
+const buttonControlItem2 = document.querySelector(".button-control-item-two");
+const buttonControlItem3 = document.querySelector(".button-control-item-three");
 
 control1.addEventListener("click", function (evt) {
     conteinerSlide1.classList.add("active-slide");

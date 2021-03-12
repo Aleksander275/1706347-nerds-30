@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог дизайн-студии Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/normalize.min.css" rel="stylesheet">
     <link href="./css/style.min.css" rel="stylesheet">
 
   </head>
@@ -46,7 +46,7 @@
 
           <h2 class="visually-hidden">Фильтор товаров</h2>
   
-          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
   
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
@@ -59,11 +59,11 @@
                   <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
+                  <label class="min-price" for="filter-min">
+                    от <input type="number" id="filter-min" name="min-price" value="0">
                   </label>
-                  <label class="max-price">
-                    до <input type="number" name="max-price" value="15000">
+                  <label class="max-price" for="filter-max">
+                    до <input type="number" id="filter-max" name="max-price" value="15000">
                   </label>
                 </div>
               </div>
@@ -139,16 +139,16 @@
           <div class="catalog-list">
   
             <ul>
-              <li class="catalog-item">
+              <li class="catalog-item" tabindex="0">
 
                 <div class="catalog-item-img">
                   <h3 class="visually-hidden">Sedona</h3>
-                  <p>
+                  <div>
                     <div class="item-img">
                       <div></div><div></div><div></div>
                     </div>
-                    <img class="image image-sedona" src="img/img-sedona 1.jpg" width="358" height="578" alt="сайт седона">
-                  </p>
+                    <img class="image image-sedona" src="img/img-sedona.jpg" width="358" height="578" alt="сайт седона">
+                  </div>
                 </div>
                 
                 <div class="container-desc-catalog-item">
@@ -163,16 +163,16 @@
 
               </li>
   
-              <li class="catalog-item">
+              <li class="catalog-item" tabindex="0">
   
                 <div class="catalog-item-img">
                   <h3 class="visually-hidden">pink app</h3>
-                  <p>
+                  <div>
                     <div class="item-img">
                       <div></div><div></div><div></div>
                     </div>
-                    <img class="image" src="img/img-pink 1.jpg" width="358" height="578" alt="сайт pink app">
-                  </p>
+                    <img class="image" src="img/img-pink.jpg" width="358" height="578" alt="сайт pink app">
+                  </div>
                 </div>
   
                 <div class="container-desc-catalog-item">
@@ -186,16 +186,16 @@
                 </div>
               </li>
   
-              <li class="catalog-item">
+              <li class="catalog-item" tabindex="0">
   
                 <div class="catalog-item-img">
                   <h3 class="visually-hidden">Barbershop</h3>
-                  <p>
+                  <div>
                     <div class="item-img">
                       <div></div><div></div><div></div>
                     </div>
-                    <img class="image" src="img/img-barbershop 1.jpg" width="358" height="578" alt="сайт барбершопа">
-                  </p>
+                    <img class="image" src="img/img-barbershop.jpg" width="358" height="578" alt="сайт барбершопа">
+                  </div>
                 </div>
   
                 <div class="container-desc-catalog-item">
@@ -211,16 +211,16 @@
   
               </li>
   
-              <li class="catalog-item">
+              <li class="catalog-item" tabindex="0">
   
                 <div class="catalog-item-img">
                   <h3 class="visually-hidden">Mishka</h3>
-                  <p>
+                  <div>
                     <div class="item-img">
                       <div></div><div></div><div></div>
                     </div>
-                    <img class="image" src="img/img-mishka 1.jpg" width="358" height="578" alt="сайт Mishka">
-                  </p>
+                    <img class="image" src="img/img-mishka.jpg" width="358" height="578" alt="сайт Mishka">
+                  </div>
                 </div>
   
                 <div class="container-desc-catalog-item">
@@ -236,16 +236,16 @@
   
               </li>
   
-              <li class="catalog-item">
+              <li class="catalog-item" tabindex="0">
   
                 <div class="catalog-item-img">
                   <h3 class="visually-hidden">a plus</h3>
-                  <p>
+                  <div>
                     <div class="item-img">
                       <div></div><div></div><div></div>
                     </div>
-                    <img class="image" src="img/img-aplus 1.jpg" width="358" height="578" alt="сайт a plus">
-                  </p>
+                    <img class="image" src="img/img-aplus.jpg" width="358" height="578" alt="сайт a plus">
+                  </div>
                 </div>
   
                 <div class="container-desc-catalog-item">
@@ -260,16 +260,16 @@
                 
               </li>
   
-              <li class="catalog-item">
+              <li class="catalog-item" tabindex="0">
   
                 <div class="catalog-item-img">
                   <h3 class="visually-hidden">kbact</h3>
-                  <p>
+                  <div>
                     <div class="item-img">
                       <div></div><div></div><div></div>
                     </div>
-                    <img class="image" src="img/img-kvast 1.jpg" width="358" height="578" alt="сайт kbact">
-                  </p>
+                    <img class="image" src="img/img-kvast.jpg" width="358" height="578" alt="сайт kbact">
+                  </div>
                 </div>
   
                 <div class="container-desc-catalog-item">
@@ -344,9 +344,9 @@
 
     <footer class="main-footer">
 
-      <h2 class="visually-hidden">Давайте дружить</h2>
-
       <section class="social-footer">
+
+        <h2 class="visually-hidden">Давайте дружить</h2>
         
         <div class="social-list">
           <ul>
